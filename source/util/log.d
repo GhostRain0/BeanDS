@@ -36,6 +36,7 @@ enum LogSource {
     GPU3D,
     RTC,
     POWERMAN,
+    JIT,
     
     IFT,
     FUNCTION

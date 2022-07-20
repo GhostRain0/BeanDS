@@ -113,3 +113,7 @@ alias s64 = long;
 alias s32 = int;
 alias s16 = short;
 alias s8  = byte;
+
+void assert_packed_enum(Enum)() {
+    static assert ((Enum.max - Enum.min + 1) == EnumMembers!Enum.length);
+}
